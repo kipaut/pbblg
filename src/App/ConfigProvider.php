@@ -37,7 +37,7 @@ class ConfigProvider
                 Action\PingAction::class => Action\PingAction::class,
             ],
             'factories'  => [
-                Action\HomePageAction::class => Action\HomePageFactory::class,
+                Action\HomePage\HomePageAction::class => Action\HomePage\HomePageFactory::class,
             ],
         ];
     }

@@ -2,6 +2,20 @@
 
 return [
     'entity_map' => [
+        'UserInGame' => [
+            'entityClass' => App\Domain\UserInGame\UserInGame::class,
+            'table' => 'user_in_game',
+            'primaryKey' => 'id',
+            'columnsAsAttributesMap' => [
+                'id' => 'id',
+                'user_id' => 'userId',
+                'game_id' => 'gameId',
+                'joined_dt' => 'joinedDt',
+            ],
+            'criteriaMap' => [
+                'id' => 'id_equalTo',
+            ]
+        ],
         'Game' => [
             'entityClass' => App\Domain\Game\Game::class,
             'table' => 'games',

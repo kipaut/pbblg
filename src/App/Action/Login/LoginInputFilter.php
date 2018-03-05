@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Action;
+namespace App\Action\Login;
 
 use Zend\InputFilter\InputFilter;
 

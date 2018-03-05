@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Action;
+namespace App\Action\HomePage;
 
 use Psr\Container\ContainerInterface;
 use Zend\Expressive\Router\RouterInterface;

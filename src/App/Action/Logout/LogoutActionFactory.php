@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Action;
+namespace App\Action\Logout;
 
 use Psr\Container\ContainerInterface;
 

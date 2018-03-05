@@ -28,11 +28,11 @@
 
 /** @var \Zend\Expressive\Application $app */
 
-$app->get('/', App\Action\HomePageAction::class, 'home');
+$app->get('/', App\Action\HomePage\HomePageAction::class, 'home');
 $app->route(
     '/login',
     [
-        App\Action\LoginAction::class,
+        App\Action\Login\LoginAction::class,
         \Zend\Expressive\Authentication\AuthenticationMiddleware::class
     ],
     ['GET', 'POST'],
@@ -41,7 +41,7 @@ $app->route(
 $app->route(
     '/logout',
     [
-        App\Action\LogoutAction::class,
+        App\Action\Logout\LogoutAction::class,
     ],
     ['GET'],
     'logout'

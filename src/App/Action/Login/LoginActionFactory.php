@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Action;
+namespace App\Action\Login;
 
 use Psr\Container\ContainerInterface;
 use Zend\Expressive\Template\TemplateRendererInterface;

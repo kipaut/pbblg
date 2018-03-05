@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Action;
+namespace App\Action\HomePage;
 
 use Interop\Http\ServerMiddleware\DelegateInterface;
 use Interop\Http\ServerMiddleware\MiddlewareInterface as ServerMiddlewareInterface;
