@@ -33,7 +33,7 @@ class ErrorResponseGenerator
     public function __invoke($e, ServerRequestInterface $request, ResponseInterface $response)
     {
         $responseArray = [
-            'id' => null,
+            'id' => $request->getAttribute('id'),
             'error' => [
                 'code' => $e->getCode(),
                 'message' => sprintf(

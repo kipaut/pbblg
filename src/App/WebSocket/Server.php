@@ -112,8 +112,8 @@ class Server implements MessageComponentInterface
 
         $application = $this->getApplication();
 
-        $application->pipe($this->container->get(ErrorHandler::class));
         $application->pipe($this->container->get(Middleware\JsonRpcMiddleware::class));
+        $application->pipe($this->container->get(ErrorHandler::class));
         $application->pipe($this->container->get(Middleware\AuthMiddleware::class));
         $application->pipe($this->container->get(Middleware\RouteMiddleware::class));
         $application->pipe($this->container->get(Middleware\ParamsValidatorMiddleware::class));

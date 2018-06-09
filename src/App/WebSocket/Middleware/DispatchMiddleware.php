@@ -7,7 +7,6 @@ use Interop\Http\ServerMiddleware\MiddlewareInterface as ServerMiddlewareInterfa
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Zend\Expressive\Router\RouteResult;
 use Zend\Diactoros\Response\JsonResponse;
 use App\WebSocket\Exception\InternalErrorException;
 use App\WebSocket\Action\ActionHandlerInterface;
